@@ -10,7 +10,7 @@ get '/hello/:name' do
 end
 
 get '/i/ran/:miles' do
-   "Well dang, #{params[:miles]} is a lot of miles. You burned off ((#{params[:miles]} * 140 ) / 120) High Lifes. Drink up!"
+   "Well dang, #{params[:miles]} is a lot of miles. You burned off #{params[:miles].to_i * 160 / 96} Miller Lites. Drink up!"
 end
 
 not_found do
